@@ -1,0 +1,53 @@
+import time
+name=input("enter your name :")
+score=0
+num=0
+read=(input(f"{name} are you ready for the quiz ? (yes/no)"))
+if(read=='yes' or 'y'):
+    time.sleep(1)
+    print("then lets proceed ")
+else:
+    time.sleep(1)
+    print("bye")
+time.sleep(0.5)
+print("a question for you ")
+time.sleep(1)
+ans1=input("what is the name of india's prime minister ")
+if(ans1=='narendra modi'or'modi'or'pm narendra modi'):
+    time.sleep(1)
+    print("your ans is correct")
+    score=score+1
+else:
+    time.sleep(1)
+    print("wrong answer :(")
+time.sleep(1)
+ans2=input("who is the father of our nation ? ")
+if(ans2=='mahatma ghandhi'or'baapu'or'mohandas karamchand gandhi'):
+    time.sleep(1)
+    print("your ans is correct")
+    score=score+1
+else:
+    time.sleep(1)
+    print("wrong answer :(")
+    score=score-1
+time.sleep(1)
+ans3=input("which is the most spoken language ? ")
+if(ans3=='english'):
+    time.sleep(1)
+    print("correct answer :)")
+    score=score+1
+else:
+    time.sleep(1)
+    print("wrong answer :(")
+    score=score-1
+time.sleep(1)
+ans4=input("enter the states of matter : ")
+if(ans4=="solid,liquid.gas"or"solid, liquid, gas"):
+    print("your answer is correct")
+    score=score+1
+else:
+    print("wrong answer")
+    time.sleep(1)
+print(f"your score is '{score}' ")
+time.sleep(2)
+print(f"well played {name}")
